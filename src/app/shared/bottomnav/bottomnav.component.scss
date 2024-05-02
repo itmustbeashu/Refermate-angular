@@ -9,32 +9,26 @@
     width: 100%;
     position: fixed;
     bottom: 0;
+    display: none;
   }
-  
   .mob-bottom-menu table {
     width: 100%;
   }
-  
   .mob-bottom-menu td {
     width: 20%;
   }
-  
   .mob-bottom-menu-options {
     color: var(--primary-light-4);
   }
-  
   .mob-bottom-menu-active {
     color: var(--primary-dark);
   }
-  
   .mob-bottom-menu-icon {
     font-size: 20px;
   }
-  
   .mob-bottom-menu-text {
     font-size: 12px;
   }
-  
   .notification-badge {
     position: absolute;
     top: 3;
@@ -45,7 +39,12 @@
     padding: 1px 5px;
     font-size: 10px;
   }
-  
   a {
     color: inherit;
   }
+  
+@media only screen and (max-width: 600px) {
+  .mob-bottom-menu {
+   display: block;
+  }
+}

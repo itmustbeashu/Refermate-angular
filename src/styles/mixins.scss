@@ -3,6 +3,7 @@
 // Only for Desktop as Sidenav takes left portion of screen
 .body-content{
     padding-left: 20%;
+    padding-bottom: 100px;
   }
 
 /* Type of Texts */
@@ -356,6 +357,9 @@ a:hover {
 
 @media only screen and (max-width: 600px) {
 
+    .body-content {
+        padding-left: 0%;
+    }
     .main-content-div {
         padding: 10px;
     }

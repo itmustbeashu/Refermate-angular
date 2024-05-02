@@ -1,8 +1,8 @@
 <div>
   <app-header></app-header>
   <div>
-    <app-sidenav> </app-sidenav>
+    <app-sidenav *ngIf="isSideNav"> </app-sidenav>
     <router-outlet></router-outlet>
-    <app-bottomnav></app-bottomnav>
+    <app-bottomnav *ngIf="isBottomNav"></app-bottomnav>
   </div>
 </div>
