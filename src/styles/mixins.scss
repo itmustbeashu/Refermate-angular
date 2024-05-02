@@ -1,5 +1,10 @@
 @import "variables";
 
+// Only for Desktop as Sidenav takes left portion of screen
+.body-content{
+    padding-left: 20%;
+  }
+
 /* Type of Texts */
 .heading-text {
     font-weight: 700;
@@ -346,6 +351,8 @@ a:hover {
 .main-content-div {
     padding: 20px;
 }
+
+
 
 @media only screen and (max-width: 600px) {
 

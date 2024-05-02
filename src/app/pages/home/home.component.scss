@@ -1,1 +1,301 @@
 
+@import "mixins";
+@import "variables";
+  /* Homepage */
+  /* Container holding the image and the text */
+
+  .img-container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+  .carousel-text-1 {
+    position: absolute;
+    top: 10%;
+    left: 57%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 22px;
+  }
+  
+  .carousel-text-2 {
+    position: absolute;
+    top: 38%;
+    left: 46%;
+    /* transform: translate(-50%, -50%); */
+    color: black;
+    font-size: 14px;
+    padding: 5px;
+    letter-spacing: 1;
+  }
+  
+  .carousel-text-refferal {
+    position: absolute;
+    top: 23%;
+    left: 67%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 100px;
+    letter-spacing: 1px;
+    font-weight: bold;
+  }
+  
+  .carousel-get-started-btn {
+    position: absolute;
+    top: 77%;
+    left: 82%;
+    padding: 12px 16px;
+    border: none;
+    width: 180px;
+  }
+  
+  .refermate-journey {
+    font-size: 28px;
+    font-weight: 600;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .journey-box {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 10px;
+    padding: 20px 0px 20px 0px;
+    height: auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(170, 217, 255, .5);
+  }
+  .journey-box-title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #1a1818;
+  }
+  .refermate-journey-img {
+    margin: 15px;
+    height: 34px;
+    width: 34px;
+  }
+  
+  .image-grid {
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-line-pack: justify;
+    align-content: space-between;
+    position: relative;
+    top: -20px;
+    padding: 25px 100px 0px 100px;
+  
+  }
+  
+  .imageContainer {
+    z-index: 1;
+    width: 90px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  
+  .image-base {
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
+    background: white;
+    box-shadow: 0 3px 6px #00000029;
+  }
+  
+  .image-text {
+    font-size: 12px;
+    font-weight: 700;
+    margin: 12px 0 0;
+  
+  }
+  
+  .horizontal-bar-homepage {
+    top: 38%;
+    width: 70%;
+  }
+  
+  .btn-container {
+    padding-top: 30px;
+    text-align: center;
+  }
+  
+  .common-journey-btn {
+    width: 120px;
+    height: 32px;
+  }
+  
+  .know-more-btn {
+    margin-right: 12px;
+  }
+
+  .hompage-content-div {
+    margin-top: 50px;
+  }
+  
+  .large-image-base {
+    height: 440px;
+    width: 440px;
+    border-radius: 4%;
+    background: white;
+    box-shadow: 0 3px 6px #00000029;
+    padding: 30px;
+    margin-left: 50px;
+  
+  }
+  
+  .large-image-set {
+    width: 380px;
+    height: 380px;
+  }
+  
+  .company-card {
+    display: inline-flex;
+    width: 24%;
+    height: 280px;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    box-shadow: 0 4px 12px rgba(170, 217, 255, .5);
+    border-radius: 8px;
+    font-size: 14px;
+    margin-top: 20px;
+  }
+  
+  .company-card-img {
+    align-items: center;
+    text-align: center;
+    padding-top: 10px;
+  }
+  
+  .request-referral-btn {
+    width: 80%;
+    margin-left: 10%;
+    height: 32px;
+  }
+  
+  .company-card-title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+  
+  }
+  
+  .company-card-sub-title {
+    text-align: center;
+    font-weight: 400;
+    color: rgba(51, 51, 51, .7);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 12px;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .carousel-text-1 {
+      position: absolute;
+      top: 10%;
+      left: 57%;
+      transform: translate(-50%, -50%);
+      color: black;
+      font-size: 22px;
+      display: none;
+    }
+    
+  .carousel-text-2 {
+    position: absolute;
+    top: 38%;
+    left: 46%;
+    /* transform: translate(-50%, -50%); */
+    color: black;
+    font-size: 14px;
+    padding: 5px;
+    letter-spacing: 1;
+    display: none;
+  }
+  
+  .carousel-text-refferal {
+    position: absolute;
+    top: 23%;
+    left: 67%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 100px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    display: none;
+  }
+  
+  .carousel-get-started-btn {
+    position: absolute;
+    top: 77%;
+    left: 82%;
+    padding: 12px 16px;
+    border: none;
+    width: 180px;
+    display: none;
+  }
+
+  .journey-box {
+    width: 100%;
+    margin-left: 0%;
+  }
+  .refermate-journey {
+    font-size: 18px;
+  }
+  .journey-box-title{
+    font-size: 13px;
+  }
+  .image-grid {
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-line-pack: justify;
+    align-content: space-between;
+    position: relative;
+    top: -20px;
+    padding: 25px 10px 0px 10px;
+  }
+  .image-base {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: white;
+    box-shadow: 0 3px 6px #00000029;
+  }
+   .refermate-journey-img{
+    margin: 5px;
+    height: 20px;
+    width: 20px;
+   }
+   .image-text {
+    font-size: 8px;
+  }
+  .btn-container {
+    padding-top: 12px;
+    text-align: center;
+  }
+  .large-image-base{
+    display: none;
+  }
+  .hompage-content-div{
+    margin-top: 5px;
+  }
+  h1 {
+    font-size: 26px !important;
+  }
+  .company-card { 
+    width: 49%;
+  }
+  }

@@ -1,1 +1,75 @@
 
+/* Dashboard */
+.feed-text-div {
+    padding: 6px;
+  }
+  .feed-main-box {
+    padding: 10px;
+    border-radius: 2px;
+  }
+  .feed-input-box {
+    width: 100%;
+    border-radius: 20px;
+    height: 36px;
+    border: 1px solid #eee;
+  }
+  .feed-input-box::placeholder {
+    padding-left: 12px;
+    font-size: 13px;
+    padding-bottom: 5px;
+  
+  }
+  .feed-user-image{
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+  }
+  .save-btn{
+    margin-left: 10px;
+    width: 40%;
+    padding: 5px;
+  }
+  .react-btn{
+    width: 40%;
+    padding: 5px;
+  }
+  .report-btn{
+    width: 100%;
+    padding: 4px;
+  }
+  .create-post-main-div {
+    padding: 10px 10px 0px 10px;
+  }
+  .post-main-box {
+  border: 1px solid #ddd;
+  width: 100%;
+  border-radius: 3px;
+  padding: 15px;
+  margin-top: 2%;
+  
+  }
+  .create-post-box {
+    padding: 5px 10px 5px 10px; 
+    width: 100%;
+    background-color: var(--white);
+  }
+  .col-sm-8{
+    padding: 0px 10px 0px 10px !important;
+  }
+  .col-sm-3{
+    padding: 0px 10px 0px 10px !important;
+  }
+  
+  @media only screen and (max-width: 600px) {
+
+    .report-btn{
+      display: none;
+    }
+    .post-content img {
+      width: 100%;
+      height: auto;
+    }
+    .feed-main-box {
+      display: none;
+    }
+  }

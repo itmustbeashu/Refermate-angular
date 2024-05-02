@@ -2,10 +2,16 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { SidenavComponent } from './sidenav/sidenav.component';
+import { BottomnavComponent } from './bottomnav/bottomnav.component';
 
 @NgModule({
     declarations: [
-        HeaderComponent
+        HeaderComponent,
+        FooterComponent,
+        SidenavComponent,
+        BottomnavComponent
     ],
     imports: [
         CommonModule,
@@ -13,7 +19,9 @@ import { HeaderComponent } from './header/header.component';
     ],
     exports: [
         RouterModule,
-        HeaderComponent
+        HeaderComponent,
+        SidenavComponent,
+        BottomnavComponent
     ],
     providers: []
 })
