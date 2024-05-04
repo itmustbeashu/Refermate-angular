@@ -8,14 +8,14 @@
                     <div class="col-sm-2">
                         <div class="side-menu-list" >
                             <div class="side-menu-div flex-direction-coloumn">
-                                <span class="side-menu-btn cursor-pointer sub-menu-text p-6 menu-active"
-                                    id="personalInfo">My Profile</span>
-                                <span class="side-menu-btn cursor-pointer sub-menu-text p-6"
-                                    id="professionalInfo">Professional</span>
-                                <span class="side-menu-btn cursor-pointer sub-menu-text p-6"
-                                    id="servicesInfo">Services</span>
-                                <span class="side-menu-btn cursor-pointer sub-menu-text p-6"
-                                    id="billingInfo">Billing</span>
+                                <span class="cursor-pointer sub-menu-text p-6 menu-active" [class.menu-active]="currentTab === 'personalInfo'"
+                                (click)="switchTab('personalInfo')">My Profile</span>
+                                <span class="cursor-pointer sub-menu-text p-6" [class.menu-active]="currentTab === 'professionalInfo'"
+                                (click)="switchTab('professionalInfo')">Professional</span>
+                                <span class="cursor-pointer sub-menu-text p-6" [class.menu-active]="currentTab === 'servicesInfo'"
+                                (click)="switchTab('servicesInfo')">Services</span>
+                                <span class="cursor-pointer sub-menu-text p-6" [class.menu-active]="currentTab === 'billingInfo'"
+                                (click)="switchTab('billingInfo')">Billing</span>
                             </div>
                         </div>
                         <div class="delete-text cursor-pointer"><span class="sub-menu-text p-6 color-red">Delete
@@ -25,7 +25,7 @@
                     <!-- Main Content -->
                     <div class="col-sm-10">
                         <!-- Personal Info -->
-                        <div class="side-menu-content" id="personalInfoContent">
+                        <div *ngIf="currentTab == 'personalInfo'" class="side-menu-content" >
                             <div class="profile-sub-div">
                                 <div><span class="small-text-1">My Profile</span></div>
                                 <div class="profile-box mt-2">
@@ -204,7 +204,7 @@
                             </div>
                         </div>
                         <!-- Professional Info -->
-                        <div class="side-menu-content d-none" id="professionalInfoContent">
+                        <div *ngIf="currentTab == 'professionalInfo'" class="side-menu-content">
                             <div class="profile-sub-div">
                                 <div ><span class="small-text-1">Professional Info</span></div>
                                 <!-- Skills & Experience -->
@@ -412,7 +412,7 @@
                             </div>
                         </div>
                         <!-- Service Info -->
-                        <div class="side-menu-content d-none" id="servicesInfoContent">
+                        <div *ngIf="currentTab == 'servicesInfo'" class="side-menu-content" >
                             <div class="profile-sub-div">
                                 <div><span class="small-text-1">Services</span></div>
                                 <div class="profile-box mt-2">
@@ -540,7 +540,7 @@
                             </div>
                         </div>
 
-                        <div class="side-menu-content d-none" id="billingInfoContent">
+                        <div *ngIf="currentTab == 'billingInfo'" class="side-menu-content" >
                             <div class="profile-sub-div">
                                 <div><span class="small-text-1">Billing</span></div>
                                 <div class="profile-box mt-2">

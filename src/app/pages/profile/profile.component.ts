@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrl: './profile.component.scss'
 })
 export class ProfileComponent {
+  currentTab: string = 'personalInfo'; // Active Tab
 
+  switchTab(tabName: string) {
+    this.currentTab = tabName;
+  }
 }

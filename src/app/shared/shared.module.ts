@@ -5,13 +5,15 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { BottomnavComponent } from './bottomnav/bottomnav.component';
+import { CreatePostModalComponent } from './create-post-modal/create-post-modal.component';
 
 @NgModule({
     declarations: [
         HeaderComponent,
         FooterComponent,
         SidenavComponent,
-        BottomnavComponent
+        BottomnavComponent,
+        CreatePostModalComponent
     ],
     imports: [
         CommonModule,
@@ -21,8 +23,11 @@ import { BottomnavComponent } from './bottomnav/bottomnav.component';
         RouterModule,
         HeaderComponent,
         SidenavComponent,
-        BottomnavComponent
+        BottomnavComponent,
+        CreatePostModalComponent
     ],
     providers: []
 })
-export class SharedModule { }
+export class SharedModule { 
+ 
+}
