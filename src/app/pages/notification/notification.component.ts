@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { SharedService } from '../../shared/services/shared.service';
+
 
 @Component({
   selector: 'app-notification',
@@ -6,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrl: './notification.component.scss'
 })
 export class NotificationComponent {
+  constructor(public service: SharedService) { }
 
 }

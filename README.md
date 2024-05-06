@@ -31,3 +31,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ng add angular-cli-ghpages
 ng build --base-href https://itmustbeashu.github.io/Refermate-angular/
 npx angular-cli-ghpages --dir=dist/refer-mate-v1/browser
+ng generate component exchange-referral

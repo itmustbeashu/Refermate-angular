@@ -29,7 +29,8 @@ const routes: Routes = [{
   path: 'register',
   loadChildren: () => import('./pages/register/register.module').then(m => m.RegisterModule),
   data: { sideNav:false,bottomNav:false,header:true,footer:false }
-}, { path: '**', redirectTo: 'login' }];
+},  
+{ path: '**', redirectTo: 'login' }];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

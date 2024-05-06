@@ -26,6 +26,12 @@
                 <span class="menu-collapsed side-menu-text"  [ngClass]="{'d-none': sidebarCollapsed}">Referrals</span>
             </div>
         </div>
+        <div [routerLink]="['/exchange']" class="side-menu-main-div">
+            <div class=" dark-light-1 pl-10" [class.light-selected]="isLinkActive('/exchange')">
+                <span class="fa fa-exchange"></span>
+                <span class="menu-collapsed side-menu-text"  [ngClass]="{'d-none': sidebarCollapsed}">Exchange</span>
+            </div>
+        </div>
         <div [routerLink]="['/notification']" class="side-nav-block-2">
             <div class="side-nave-line"></div>
             <div class="side-menu-main-div">
