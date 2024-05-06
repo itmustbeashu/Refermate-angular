@@ -11,14 +11,9 @@ export class CreatePostModalComponent implements OnInit {
 
   constructor(public dialogRef: MatDialogRef<CreatePostModalComponent>) {}
 
-  editor!: Editor;
+  editor: Editor = new Editor;
   html = '';
   switchToAI: boolean = false;
-
-  // make sure to destory the editor
-  ngOnDestroy(): void {
-    this.editor.destroy();
-  }
 
   ngOnInit(): void {
     this.editor = new Editor();
@@ -30,6 +25,11 @@ export class CreatePostModalComponent implements OnInit {
 
   switchModal() {
     this.switchToAI = !this.switchToAI;
+  }
+
+   // make sure to destory the editor
+  ngOnDestroy(): void {
+    this.editor.destroy();
   }
 
 }
