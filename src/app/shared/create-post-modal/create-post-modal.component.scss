@@ -1,3 +1,73 @@
-.test {
-    background-color:red;
+.profile-image{
+    border-radius: 100%;
+    height: 62px;
+    width: 62px;
+}
+.main-modal{
+    padding: 20px;
+}
+.close-icon {
+    font-size: 20px;
+    color: #b9b5b5;
+    font-weight: 300;
+}
+.modal-middle-content{
+    height: 400px;
+    padding-top: 30px;
+}
+.button-div {
+    display: flex; /* Use flexbox for layout */
+    justify-content: flex-end; /* Align items to the end of the container (right side) */
+    width: 100%; /* Set width to 100% */
+}
+.button-div button {
+    margin-left: 10px; /* Add some margin between buttons if needed */
+}
+.post-textarea {
+    width: 100%;
+    height: 80%;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+}
+.post-textarea:focus {
+    outline: none; /* Remove default outline */
+    border-color: transparent; /* Set border color to transparent */
+}
+.modal-footer-content{  
+    justify-content: flex-end;
+    border-top: 1px solid #eee;
+    width: 100%;
+    padding-top: 15px;
+}
+.post-button{
+    padding: 4px;
+    border-radius: 4px;
+}
+.button-width {
+  width: 12%;
+}
+.use-ai {
+    
+     border: 1px solid #636363; 
+     padding: 4px 15px 4px 15px;
+     border-radius: 20%;
+     text-align: center;
+     color: #636363; 
+}
+.Iframe-window {
+    height: 350px;
+    width: 100%;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .button-width {
+        width: 30%;
+    }
+    .modal-top {
+        margin-top: 5%;
+    }
 }

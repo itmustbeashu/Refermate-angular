@@ -1,8 +1,26 @@
-<div>
+<div class="main-modal">
  <div class="modal-top">
-      <div>
-        This is Test Modal
-      </div>
- </div>
-
+    <table class="w-100">
+        <tr>
+            <td width="5%" rowspan="2"><div><img src="assets/images/avatar3.png" class="profile-image"></div></td>
+            <td width="94%"><div class="pl-2"><span class="heading-text d-block">Ashish Singh</span><span class="pt-1 small-text-light-1 d-block">Full stack developer</span></div></td>
+            <td><div (click)="close()"><i class="fa fa-times close-icon"></i></div></td>
+        </tr>
+    </table>
+</div>
+<div class="modal-middle-content">
+    <div *ngIf = "switchToAI">
+        <iframe src="https://chatgpt.com/?oai-dm=1" class="Iframe-window" frameborder="0"></iframe>
+    </div> 
+    <div *ngIf = "!switchToAI">
+        <textarea class="post-textarea" placeholder="What do you want to share ?"></textarea>
+    </div>   
+</div>
+<div class="modal-footer-content">
+    <div class="button-div">
+        <button *ngIf = "!switchToAI" class="use-ai button-width cursor-pointer" (click)="switchModal()"><i class="fa fa-star-o"></i><span class="pl-1">Use AI</span></button>
+        <button *ngIf = "!switchToAI" class="black-btn button-width post-button">Post</button>
+        <button *ngIf = "switchToAI" class="black-btn button-width post-button" (click)="switchModal()">Back</button>
+  </div>
+</div>
 </div>

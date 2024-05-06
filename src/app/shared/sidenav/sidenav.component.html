@@ -26,7 +26,6 @@
                 <span class="menu-collapsed side-menu-text"  [ngClass]="{'d-none': sidebarCollapsed}">Referrals</span>
             </div>
         </div>
-
         <div [routerLink]="['/notification']" class="side-nav-block-2">
             <div class="side-nave-line"></div>
             <div class="side-menu-main-div">
@@ -35,7 +34,7 @@
                     <span class="menu-collapsed side-menu-text"  [ngClass]="{'d-none': sidebarCollapsed}">Notifications</span>
                 </div>
             </div>
-            <div  (click)="sidebarCollapse()" class="side-menu-main-div" data-toggle="sidebar-colapse">
+            <div (click)="sidebarCollapse()" class="side-menu-main-div" data-toggle="sidebar-colapse">
                 <div class=" default-black-color pl-10">
                     <span id="collapse-icon" class="fa fa-arrow-left" [ngClass]="{'fa-angle-double-left': !sidebarCollapsed, 'fa-angle-double-right': sidebarCollapsed}"></span>
                     <span id="collapse-text" class="menu-collapsed side-menu-text"  [ngClass]="{'d-none': sidebarCollapsed}">Collapse</span>
@@ -58,8 +57,7 @@
                 </div>
             </div>
             <br>
-        </div>
-     
+        </div> 
     </ul>
 </div>
 
