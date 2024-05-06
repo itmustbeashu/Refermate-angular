@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { Router, ActivatedRoute } from '@angular/router';
+import { CreatePostModalComponent } from '../create-post-modal/create-post-modal.component';
 
 @Component({
   selector: 'app-bottomnav',
@@ -6,5 +9,9 @@ import { Component } from '@angular/core';
   styleUrl: './bottomnav.component.scss'
 })
 export class BottomnavComponent {
+  constructor(public dialog: MatDialog,private router: Router, private route: ActivatedRoute) { }
 
+  openCreatePostModal(): void {
+    const dialogRef = this.dialog.open(CreatePostModalComponent);
+  }
 }

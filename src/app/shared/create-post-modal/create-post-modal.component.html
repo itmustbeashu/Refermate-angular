@@ -1,5 +1,5 @@
 <div class="main-modal">
- <div class="modal-top">
+ <div class="modal-top-content">
     <table class="w-100">
         <tr>
             <td width="5%" rowspan="2"><div><img src="assets/images/avatar3.png" class="profile-image"></div></td>
@@ -9,7 +9,7 @@
     </table>
 </div>
 <div class="modal-middle-content">
-    <div *ngIf = "switchToAI">
+    <div *ngIf = "switchToAI" class="h-100">
         <iframe src="https://chatgpt.com/?oai-dm=1" class="Iframe-window" frameborder="0"></iframe>
     </div> 
     <div *ngIf = "!switchToAI">

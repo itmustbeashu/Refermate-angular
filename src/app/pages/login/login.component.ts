@@ -13,11 +13,6 @@ export class LoginComponent {
     console.log("Coming in login")
   }
 
-  openCreatePostModal(): void {
-    const dialogRef = this.dialog.open(CreatePostModalComponent, {
-      width: '2000px',
-    });
-  }
 }
 
 

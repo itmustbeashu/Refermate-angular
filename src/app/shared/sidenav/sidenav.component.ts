@@ -20,14 +20,10 @@ export class SidenavComponent {
   }
   ngOnInit(): void {
     // Call your function here
-     console.log('HERE');
-     this.openCreatePostModal();
      
   }
 
   openCreatePostModal(): void {
-    const dialogRef = this.dialog.open(CreatePostModalComponent, {
-      width: 'auto',
-    });
+    const dialogRef = this.dialog.open(CreatePostModalComponent);
   }
 }
