@@ -17,12 +17,9 @@ export class SidenavComponent {
   }
   sidebarCollapse() {
     this.sidebarCollapsed = !this.sidebarCollapsed;
+    
   }
-  ngOnInit(): void {
-    // Call your function here
-     
-  }
-
+ 
   openCreatePostModal(): void {
     const dialogRef = this.dialog.open(CreatePostModalComponent);
   }
