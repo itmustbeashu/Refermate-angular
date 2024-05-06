@@ -6,6 +6,7 @@ import { FooterComponent } from './footer/footer.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { BottomnavComponent } from './bottomnav/bottomnav.component';
 import { CreatePostModalComponent } from './create-post-modal/create-post-modal.component';
+import { NgxEditorModule } from 'ngx-editor';
 
 @NgModule({
     declarations: [
@@ -18,6 +19,7 @@ import { CreatePostModalComponent } from './create-post-modal/create-post-modal.
     imports: [
         CommonModule,
         RouterModule,
+        NgxEditorModule,
     ],
     exports: [
         RouterModule,
