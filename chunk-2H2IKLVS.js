@@ -1,0 +1,1 @@
+import{A as r,e as o}from"./chunk-7YMRFQ7U.js";var a=(()=>{let t=class t{constructor(){this.isSideMenuCollapsed=!1,this.destroy$=new o}ngOnDestroy(){console.log("destroyed service"),this.destroy$.next(!0)}};t.\u0275fac=function(s){return new(s||t)},t.\u0275prov=r({token:t,factory:t.\u0275fac,providedIn:"root"});let e=t;return e})();export{a};
