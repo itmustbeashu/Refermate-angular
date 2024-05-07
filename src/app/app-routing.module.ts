@@ -32,7 +32,7 @@ const routes: Routes = [{
 },{
   path: 'exchange-referral',
   loadChildren: () => import('./pages/exchange-referral/exchange-referral.module').then(m => m.ExchangeReferralModule),
-  data: { sideNav:true,bottomNav:false,header:true,footer:false }
+  data: { sideNav:true,bottomNav:true,header:true,footer:false }
 }, 
 { path: '**', redirectTo: 'login' }];
 

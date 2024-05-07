@@ -13,6 +13,7 @@ export class ExchangeReferralComponent {
   colorIndex: number = 0;
   dropdownList :any= [];
   selectedItems:any= [];
+  mobFilterToggle: boolean = false;
   data = exchangeReferral;
   dropdownSettings = {
     singleSelection: false,
@@ -55,5 +56,8 @@ export class ExchangeReferralComponent {
   }
   onSearch() {
    this.showResult = true;
+  }
+  toggleMobFilter() {
+    this.mobFilterToggle = !this.mobFilterToggle
   }
 }

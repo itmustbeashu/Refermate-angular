@@ -59,3 +59,29 @@
          </div>
       </div>
    </div>
+</div>
+<div class="mobile-bottom-filter">
+   <div *ngIf="!mobFilterToggle">
+            <div (click)="toggleMobFilter()" class="center-element"><span>Filter</span><span><i class="pl-2 fa fa-arrow-up" aria-hidden="true"></i> </span></div>
+   </div>
+   <div *ngIf="mobFilterToggle">
+      <div (click)="toggleMobFilter()"  class="center-element">
+           <i class="fa fa-arrow-down" aria-hidden="true"></i>  
+      </div>
+      <div class="filter-referral-div">
+         <div>Organisation you <b>Can Refer:</b></div>
+         <div><input type="text" value="Infosys Pvt. Ltd." class=" input-box-1 referral-input-box" disabled></div>
+      </div>
+      <div class="filter-referral-div">
+         <div>Organisation you <b class="primary-blue">Want Referral:</b></div>
+         <div class="referral-multiselect-box">
+            <ng-multiselect-dropdown (onSelect)="onItemSelect($event)" [placeholder]="'Select Organisation'"
+               [settings]="dropdownSettings" [data]="dropdownList">
+            </ng-multiselect-dropdown>
+         </div>
+      </div>
+      <div class="filter-search-div d-flex align-items-center justify-content-center">
+         <button (click)="onSearch()" class="blue-btn search-btn blue-btn-gradient">Search</button>
+      </div>
+   </div>
+</div>

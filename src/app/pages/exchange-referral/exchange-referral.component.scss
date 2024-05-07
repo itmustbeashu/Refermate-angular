@@ -9,6 +9,7 @@
     display: flex;
     flex-wrap: wrap;
 }
+
 .filter-referral-div {
     width: 40%;
 }
@@ -27,12 +28,14 @@
     width: 80%;
     padding: 5px 0px;
 }
+
 .search-btn {
     width: 80%;
     padding: 7px;
     border-radius: 4px;
     font-weight: 700;
 }
+
 .applied-filters {
     margin: 12px 0px 0px 5px;
     padding: 2px 7px 2px 7px;
@@ -41,15 +44,19 @@
     letter-spacing: 1px;
     font-weight: 700;
 }
-.referral-top{
+
+.referral-top {
     height: 60%;
 }
-.referral-middle{
+
+.referral-middle {
     height: 30%;
 }
-.referral-bottom{
+
+.referral-bottom {
     height: 10%;
 }
+
 .referral-person-box {
     border: 1px solid var(--color-light-ddd);
     border-radius: 8px;
@@ -74,59 +81,98 @@
 
 .referral-box-img {
     padding-top: 5%;
-    display: flex; 
+    display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
 }
+
 .margin-top-3 {
     margin-top: 3%;
 }
+
 .referral-box-company {
-    display: flex; 
+    display: flex;
     justify-content: center;
     margin-top: 3%;
 }
+
 .company-tag {
-   background-color: rgb(127, 115, 236);
-   color: white;
-   font-size: 14px;
-   padding: 4px 10px 4px 10px;
-   border-radius: 4px;
-   font-weight: 600;
-   letter-spacing: 1px;
+    background-color: rgb(127, 115, 236);
+    color: white;
+    font-size: 14px;
+    padding: 4px 10px 4px 10px;
+    border-radius: 4px;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
+
 .img-set {
     width: 72px;
     height: 72px;
 }
 
+.mobile-bottom-filter {
+    display: none;
+    transition: padding 0.3s ease-out;
+    background-color: var(--primary-dark);
+    color: white;
+    padding: 10px 20px 20px 20px;
+    position: fixed;
+    bottom: 8%;
+    width: 100%;
+}
+
 @media only screen and (max-width: 600px) {
 
+    .filter-div {
+        display: none;
+    }
+    .mobile-bottom-filter {
+     display: block;
+    }
     .filter-referral-div,
     .filter-search-div,
     .search-btn,
+    .referral-input-box,
+    .referral-multiselect-box {
+        width: 100%;
+    }
+    .filter-referral-div {
+        margin-top: 5%;
+    }
     .referral-input-box {
-        width: 100%;
+        color: white;
     }
-    .search-btn {
-        width: 100%;
-       margin-top: 2%;
+    .center-element {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-.referral-person-box {
-    width: 48%;
-    margin: 1%;
-    height: 280px;
-}
-.referral-top{
-    height: 65%;
-}
-.referral-middle{
-    height: 25%;
-}
-.referral-bottom{
-    height: 10%;
-}
-.heading-text {
-    font-size: 15px;
-}
+
+    .filter-search-div {
+        margin-top: 10%;
+    }
+
+    .referral-person-box {
+        width: 48%;
+        margin: 1%;
+        height: 280px;
+    }
+
+    .referral-top {
+        height: 65%;
+    }
+
+    .referral-middle {
+        height: 25%;
+    }
+
+    .referral-bottom {
+        height: 10%;
+    }
+
+    .heading-text {
+        font-size: 15px;
+    }
+
 }
