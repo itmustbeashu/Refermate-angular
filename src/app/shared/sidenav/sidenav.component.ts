@@ -19,7 +19,7 @@ export class SidenavComponent {
   }
   sidebarCollapse() {
     this.sidebarCollapsed = !this.sidebarCollapsed;
-    this.service.isSideMenuCollapsed = true; 
+    this.service.isSideMenuCollapsed = !this.service.isSideMenuCollapsed; 
   }
  
   openCreatePostModal(): void {

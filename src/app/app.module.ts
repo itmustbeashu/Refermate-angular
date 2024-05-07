@@ -5,19 +5,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 import { NgxEditorModule } from 'ngx-editor';
-import { ExchangeReferralComponent } from './pages/exchange-referral/exchange-referral.component';
-
+import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
 @NgModule({
   declarations: [
-    AppComponent,
-    ExchangeReferralComponent,
+    AppComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     SharedModule,
     MatDialogModule,
-    NgxEditorModule
+    NgxEditorModule,
+    NgMultiSelectDropDownModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

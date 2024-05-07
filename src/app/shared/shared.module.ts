@@ -7,6 +7,7 @@ import { SidenavComponent } from './sidenav/sidenav.component';
 import { BottomnavComponent } from './bottomnav/bottomnav.component';
 import { CreatePostModalComponent } from './create-post-modal/create-post-modal.component';
 import { NgxEditorModule } from 'ngx-editor';
+import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
 
 @NgModule({
     declarations: [
@@ -14,19 +15,21 @@ import { NgxEditorModule } from 'ngx-editor';
         FooterComponent,
         SidenavComponent,
         BottomnavComponent,
-        CreatePostModalComponent
+        CreatePostModalComponent,
     ],
     imports: [
         CommonModule,
         RouterModule,
         NgxEditorModule,
+        NgMultiSelectDropDownModule,
+    
     ],
     exports: [
         RouterModule,
         HeaderComponent,
         SidenavComponent,
         BottomnavComponent,
-        CreatePostModalComponent
+        CreatePostModalComponent,
     ],
     providers: []
 })

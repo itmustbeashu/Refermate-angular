@@ -29,7 +29,11 @@ const routes: Routes = [{
   path: 'register',
   loadChildren: () => import('./pages/register/register.module').then(m => m.RegisterModule),
   data: { sideNav:false,bottomNav:false,header:true,footer:false }
-},  
+},{
+  path: 'exchange-referral',
+  loadChildren: () => import('./pages/exchange-referral/exchange-referral.module').then(m => m.ExchangeReferralModule),
+  data: { sideNav:true,bottomNav:false,header:true,footer:false }
+}, 
 { path: '**', redirectTo: 'login' }];
 
 @NgModule({

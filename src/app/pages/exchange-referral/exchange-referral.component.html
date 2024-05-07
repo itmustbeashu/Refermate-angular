@@ -1,1 +1,61 @@
-<p>exchange-referral works!</p>
+<div class="body-content">
+   <div class="main-content-div">
+      <div class="heading-text">Exchange Referral</div>
+      <div class="filter-div">
+         <div class="filter-referral-div">
+            <div>Organisation you <b>Can Refer:</b></div>
+            <div><input type="text" value="Infosys Pvt. Ltd." class=" input-box-1 referral-input-box" disabled></div>
+         </div>
+         <div class="filter-referral-div">
+            <div>Organisation you <b class="primary-blue">Want Referral:</b></div>
+            <div class="referral-multiselect-box">
+               <ng-multiselect-dropdown (onSelect)="onItemSelect($event)" [placeholder]="'Select Organisation'"
+                  [settings]="dropdownSettings" [data]="dropdownList">
+               </ng-multiselect-dropdown>
+            </div>
+         </div>
+         <div class="filter-search-div d-flex align-items-center justify-content-center">
+            <button (click)="onSearch()" class="blue-btn search-btn blue-btn-gradient">Search</button>
+         </div>
+      </div>
+
+      <div *ngIf="showResult" class="result mt-3">
+         <div class="heading-text">Results</div>
+         <div class="d-flex">
+            <div class="applied-filters" *ngFor="let obj of filterObj" [style.background-color]="obj.color">
+               {{ obj.company }}
+            </div>
+         </div>
+         <div  class="mt-2 d-flex flex-wrap-wrap" >
+         
+            <div  *ngFor="let item of data" class="referral-person-box box-shadow">
+            <div class="referral-top">
+               <div class="referral-box-img">
+                  <img [src]="'assets/images/' + item.profileImage" alt="Profile Image" class="br-100 img-set">
+               </div>
+               <div class="d-flex justify-content-center margin-top-3">
+                  <span class="heading-text">{{ item.firstName }} {{ item.lastName }}</span>
+               </div>
+               <div class="d-flex justify-content-center margin-top-3">
+                  <span class="company-tag" [style.background-color]="generateRandomColors()"> {{ item.company }}</span>
+               </div>
+            </div>
+            <div class="referral-middle">
+                  <div class="w-100 d-flex light-bottom-border">
+                     <div class="flex-grow-1 small-text-light-1">Total Applicant Requested</div>
+                     <div class="small-text-light-1">{{ item.requestedApplicants }}</div>
+                  </div>
+                  <div class="w-100 d-flex mt-2 cursor-pointer light-bottom-border">
+                     <div class="flex-grow-1 small-text-light-1">Total Services Offered</div>
+                     <div class="small-text-light-1"> {{ item.services }}</div>
+                  </div>
+            </div>
+
+               <div class="referral-bottom" >
+                  <button class="request-referral-btn w-100">Exchange</button>
+               </div>
+            </div>
+
+         </div>
+      </div>
+   </div>

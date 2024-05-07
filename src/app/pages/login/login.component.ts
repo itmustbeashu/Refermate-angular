@@ -1,6 +1,5 @@
 import { Component } from '@angular/core'
 import { MatDialog } from '@angular/material/dialog';
-import { CreatePostModalComponent } from '../../shared/create-post-modal/create-post-modal.component';
 
 @Component({
   selector: 'app-login',
