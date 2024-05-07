@@ -54,7 +54,15 @@ export class ExchangeReferralComponent {
       }
       return color;
   }
+  onSelectAll(items:any) {
+  
+   for (let i = 0; i < items.length; i++) { 
+    this.filterObj.push({company:items[i].company, color:this.generateRandomColors()});
+   }
+   
+  }
   onSearch() {
+   this.mobFilterToggle = false;
    this.showResult = true;
   }
   toggleMobFilter() {

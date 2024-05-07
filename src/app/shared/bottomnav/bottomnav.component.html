@@ -2,9 +2,8 @@
     <!-- Mobile Menu content -->
         <table>
             <tr>
-                <td align="center">
-                    
-                        <div [routerLink]="['/dashboard']" class="mob-bottom-menu-options mob-bottom-menu-active">
+                <td align="center">          
+                        <div [routerLink]="['/dashboard']" [class.mob-bottom-menu-active]="isLinkActive('/dashboard')" class="mob-bottom-menu-options">
                             <span class="d-block mob-bottom-menu-icon"><i class="fa fa-home"
                                     aria-hidden="true"></i></span>
                             <span class="mob-bottom-menu-text">Home</span>
@@ -12,7 +11,7 @@
                 </td>
                 <td align="center">
                     
-                        <div [routerLink]="['/referral']" class="mob-bottom-menu-options">
+                        <div [routerLink]="['/referral']" [class.mob-bottom-menu-active]="isLinkActive('/referral')" class="mob-bottom-menu-options">
                             <span class="d-block mob-bottom-menu-icon"><i class="fa fa-users"
                                     aria-hidden="true"></i></span>
                             <span class="mob-bottom-menu-text">Referral</span>
@@ -25,20 +24,20 @@
                             <span class="mob-bottom-menu-text">Post</span>
                         </div>
                 </td>
+                <td align="center">
+                        <div [routerLink]="['/exchange-referral']" [class.mob-bottom-menu-active]="isLinkActive('/exchange-referral')" class="mob-bottom-menu-options">
+                            <span class="d-block mob-bottom-menu-icon"><i class="fa fa-exchange"
+                                    aria-hidden="true"></i></span>
+                            <span class="mob-bottom-menu-text">Exchange</span>
+                        </div>         
+                </td>
                 <td align="center">    
-                    <div [routerLink]="['/notification']" class="mob-bottom-menu-options">
+                    <div [routerLink]="['/notification']" [class.mob-bottom-menu-active]="isLinkActive('/notification')" class="mob-bottom-menu-options">
                             <span class="d-block mob-bottom-menu-icon"><i class="fa fa-bell"
                                     aria-hidden="true"></i></span>
                             <span class="mob-bottom-menu-text">Notifications</span>
                             <span class="notification-badge">7</span>
                         </div>
-                </td>
-                <td align="center">
-                        <div [routerLink]="['/profile']" class="mob-bottom-menu-options">
-                            <span class="d-block mob-bottom-menu-icon"><i class="fa fa-user"
-                                    aria-hidden="true"></i></span>
-                            <span class="mob-bottom-menu-text">Profile</span>
-                        </div>         
                 </td>
             </tr>
         </table>

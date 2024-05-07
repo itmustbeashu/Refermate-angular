@@ -11,6 +11,10 @@ import { CreatePostModalComponent } from '../create-post-modal/create-post-modal
 export class BottomnavComponent {
   constructor(public dialog: MatDialog,private router: Router, private route: ActivatedRoute) { }
 
+  isLinkActive(routePath: string): boolean {
+    return this.router.url.includes(routePath);
+   }
+   
   openCreatePostModal(): void {
     const dialogRef = this.dialog.open(CreatePostModalComponent);
   }

@@ -10,6 +10,7 @@
     position: fixed;
     bottom: 0;
     display: none;
+    height: 10%;
   }
   .mob-bottom-menu table {
     width: 100%;
@@ -32,7 +33,7 @@
   .notification-badge {
     position: absolute;
     top: 12%;
-    left: 70%;
+    left: 90%;
     background-color: red;
     color: white;
     border-radius: 50%;
