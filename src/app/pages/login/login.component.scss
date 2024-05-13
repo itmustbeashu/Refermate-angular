@@ -2,7 +2,8 @@
 @import "variables";
 
 .container {
-    padding: 20px 0px 20px 0px !important;
+    margin-top: 2% !important;
+    padding: 40px 0px 40px 0px !important;
 }
 
 .login-img {
@@ -85,11 +86,22 @@
 
 @media only screen and (max-width: 600px) {
 
+    .container {
+        height: calc(90vh - 54px) !important;
+        margin-top: 0% !important;
+        padding: 0px 0px 0px 0px !important;
+    }
+
     .horizontal-bar-login-1 {
-        width: 18%;
-        right: 60%;
-        top: 100%;
         display: none;
+    }
+
+    .top-content {
+        height: 95%;
+    }
+
+    .row {
+        height: 100% !important;
     }
 
     .horizontal-bar-login-2 {
@@ -99,9 +111,8 @@
         display: none;
     }
 
-    .container {
-        height: 520px;
-        padding: 0px 0px 0px 0px !important;
+    .not-a-member {
+        margin-top: 0%;
     }
 
     .login-img-div {
@@ -110,8 +121,8 @@
 
     .login-box {
         width: 100%;
-        height: 100vh;
-        padding: 20px 20px 10px 20px;
+        height: 100%;
+        padding: 20px 20px 0px 20px;
         margin: 0;
     }
 
@@ -134,5 +145,4 @@
         left: 45%;
         top: 75%;
     }
-
 }

@@ -1,32 +1,6 @@
 @import "mixins";
 @import "variables";
 
-.loginBtn {
-  padding: 6px 16px;
-  background-color: var(--primary-dark);
-  border-radius: 8px;
-  font-weight: var(--semi-bold);
-  color: var(--white);
-  border: none;
-  font-size: 0.9rem !important;
-}
-.blog-btn {
-  padding: 6px 16px;
-  background: transparent;
-  border: 1px solid var(--primary-dark);
-  border-radius: 8px;
-  color: var(--primary-dark);
-  font-size: 0.9rem !important;
-  display: flex;
-  align-items: center;
-}
-.header-sticky {
-  top: 0px;
-  z-index: 100;
-  position: sticky;
-  background-color: white;
-  width: 100%;
-}
 /*  ------ Footer ------ */
 .footer {
   height: 40px;
