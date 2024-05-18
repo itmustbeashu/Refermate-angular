@@ -37,9 +37,6 @@
     width: 100%;
     padding: 4px;
   }
-  .create-post-main-div {
-    padding: 10px 10px 0px 10px;
-  }
   .post-main-box {
   border: 1px solid #ddd;
   width: 100%;
@@ -53,13 +50,7 @@
     width: 100%;
     background-color: var(--white);
   }
-  .col-sm-8{
-    padding: 0px 10px 0px 10px !important;
-  }
-  .col-sm-3{
-    padding: 0px 10px 0px 10px !important;
-  }
-  
+
   @media only screen and (max-width: 600px) {
 
     .report-btn{

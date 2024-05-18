@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SharedService } from '../../shared/services/shared.service';
 
 @Component({
   selector: 'app-settings',
@@ -7,7 +8,7 @@ import { Component } from '@angular/core';
 })
 export class SettingsComponent {
   currentTab: string = 'preferences'; // Active Tab
-
+  constructor(public service: SharedService) { }
   switchTab(tabName: string) {
     this.currentTab = tabName;
   }

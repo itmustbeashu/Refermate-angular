@@ -35,7 +35,7 @@
         <div class="side-nav-block-2">
             <div class="side-nave-line"></div>
             <div class="side-menu-main-div">
-                <div class=" default-black-color pl-10" [class.light-selected]="isLinkActive('/notification')">
+                <div class="default-black-color pl-10" [routerLink]="['/notification']" [class.light-selected]="isLinkActive('/notification')">
                     <span class="fa fa-bell"></span>
                     <span class="menu-collapsed side-menu-text"  [ngClass]="{'d-none': sidebarCollapsed}">Notifications</span>
                 </div>
@@ -56,7 +56,7 @@
                     <span class="menu-collapsed try-premium-text"  [ngClass]="{'d-none': sidebarCollapsed}">Try Premium for &#8377;0</span>
                 </div>
             </div>
-            <div class="side-menu-main-div">
+            <div class="side-menu-main-div" [routerLink]="['/settings']">
                 <div class=" dark-light-1 pl-10">
                     <span class="fa fa-cog"></span>
                     <span class="menu-collapsed setting-text"  [ngClass]="{'d-none': sidebarCollapsed}">Settings</span>

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SharedService } from '../../shared/services/shared.service';
 
 @Component({
   selector: 'app-profile',
@@ -6,6 +7,7 @@ import { Component } from '@angular/core';
   styleUrl: './profile.component.scss'
 })
 export class ProfileComponent {
+  constructor(public service: SharedService) { }
   currentTab: string = 'personalInfo'; // Active Tab
 
   switchTab(tabName: string) {

@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { exchangeReferral } from '../../shared/sample-data';
+import { SharedService } from '../../shared/services/shared.service';
+
 @Component({
   selector: 'app-exchange-referral',
   templateUrl: './exchange-referral.component.html',
@@ -7,7 +9,7 @@ import { exchangeReferral } from '../../shared/sample-data';
 })
 export class ExchangeReferralComponent {
   
-  constructor() { }
+  constructor(public service: SharedService) { }
   filterObj: { company: string, color: string }[] = []; 
   showResult: boolean = false;
   colorIndex: number = 0;
@@ -54,6 +56,7 @@ export class ExchangeReferralComponent {
       }
       return color;
   }
+  
   onSelectAll(items:any) {
   
    for (let i = 0; i < items.length; i++) { 

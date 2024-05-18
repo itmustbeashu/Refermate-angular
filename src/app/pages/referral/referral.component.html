@@ -1,5 +1,5 @@
-<div class="body-content bg-light">
-    <div class="main-content-div">
+<div [ngClass]="service.isSideMenuCollapsed? 'body-sidenav-collapsed': 'body-sidenav-expanded'" class="body-content body-sidenav-expanded">
+    <div class="">
         <div class="heading-text">People</div>
         <div class="mt-2 d-flex justify-content-space-between flex-wrap-wrap">
             <div class="referral-person-box box-shadow">

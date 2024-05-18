@@ -33,6 +33,14 @@ const routes: Routes = [{
   path: 'exchange-referral',
   loadChildren: () => import('./pages/exchange-referral/exchange-referral.module').then(m => m.ExchangeReferralModule),
   data: { sideNav:true,bottomNav:true,header:true,footer:false }
+},{
+  path: 'settings',
+  loadChildren: () => import('./pages/settings/settings.module').then(m => m.SettingsModule),
+  data: { sideNav:true,bottomNav:true,header:true,footer:false }
+},{
+  path: 'contact-us',
+  loadChildren: () => import('./pages/contact-us/contact-us.module').then(m => m.ContactUsModule),
+  data: { sideNav:true,bottomNav:true,header:true,footer:false }
 }, 
 { path: '**', redirectTo: 'login' }];
 

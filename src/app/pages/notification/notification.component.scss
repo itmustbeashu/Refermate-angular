@@ -9,8 +9,6 @@
   }
   .notification-div{
     width: 80%;
-    overflow-x: hidden;
-    overflow-y: auto;
     text-align: justify;
   }
   .notification-strap {
@@ -26,40 +24,12 @@
     font-size: 10px;
     color: var(--primary-light-4);
   }
-  
-  /* Scrollbar custom settings */
-  ::-webkit-scrollbar {
-    /* width: 20px; */
-    width: 2px;
-    background-color: var(--primary-bg-page-color);
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-   display: none;
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: var(--color-light-ddd); 
-    height: 12px !important;
-    border-radius: 10px;
-    
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: var(--color-light-ddd); 
-    
-  }
-  
+ 
   
   @media only screen and (max-width: 600px) {
     .notification-div{
         width: 100%;
         height: 100%;
-        overflow-x: hidden;
-        overflow-y: auto;
         text-align: justify;
     }
   

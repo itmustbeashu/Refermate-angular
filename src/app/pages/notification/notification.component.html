@@ -1,6 +1,5 @@
-<div [ngClass]="service.isSideMenuCollapsed? 'body-content-sidenav-collapsed': 'body-content'">
-   <div class="bg-light">
-        <div class="main-content-div">
+<div [ngClass]="service.isSideMenuCollapsed? 'body-sidenav-collapsed': 'body-sidenav-expanded'" class="body-content body-sidenav-expanded">
+    <div>
             <div><span class="title-text-3">Notifications</span></div>
             <div class="d-flex pt-3">
                 <div><span class="text-1 notification-main-filter-active">All</span></div>
@@ -297,7 +296,6 @@
     
                     </table>
                 </div>
-            </div>
-        </div>
-     </div>
+            </div> 
+    </div>
 </div>

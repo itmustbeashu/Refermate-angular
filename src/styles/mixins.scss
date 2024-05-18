@@ -1,5 +1,16 @@
 @import "variables";
-
+// Only for Desktop as Sidenav takes left portion of screen
+.body-content{ 
+    transition: margin-left 0.5s ease; /* Add transition for margin-left */ 
+    padding: 15px 30px 30px 30px;
+}
+.body-sidenav-expanded {
+    margin-left: 20%;
+}
+.body-sidenav-collapsed {
+    margin-left: 3%;  
+}
+// Modal Box
 .cdk-overlay-container {
     bottom: 0 !important;
     left: 15%;
@@ -14,22 +25,81 @@
 .cdk-overlay-pane, .mat-mdc-dialog-panel, .cdk-global-overlay-wrapper {
   height: 100%;
 }
-// Only for Desktop as Sidenav takes left portion of screen
-.body-content{
-    padding-left: 20%;
-    padding-bottom: 100px;
+
+// Toggle Switch
+
+/* The switch - the box around the slider */
+.switch {
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 3.5em;
+    height: 2em;
   }
-.body-content-sidenav-collapsed {
-    padding-left: 5%;
-    padding-bottom: 100px;
-}
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(182, 182, 182);
+    transition: .4s;
+    border-radius: 10px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 1.4em;
+    width: 1.4em;
+    border-radius: 8px;
+    left: 0.3em;
+    bottom: 0.3em;
+    transform: rotate(270deg);
+    background-color: rgb(255, 255, 255);
+    transition: .4s;
+  }
+  
+  .switch input:checked + .slider {
+    background-color: #21cc4c;
+  }
+  
+  .switch input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  .switch input:checked + .slider:before {
+    transform: translateX(1.5em);
+  }
+
 /* Type of Texts */
 .heading-text {
     font-weight: 700;
     line-height: 18px;
     font-size: 22px;
 }
-
+.font-1 {
+ color: var(--primary-dark); 
+ font-size: 21px;
+ letter-spacing: 0.5px;
+ font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.font-1-light {
+    color:  #7e7e7e;
+    font-size: 21px;
+    letter-spacing: 0.5px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 .sub-text-2 {
     font-weight: 500;
     line-height: 18px;
@@ -99,6 +169,7 @@
 .title-text-2 {
     font-weight: 700;
     font-size: 16px;
+    letter-spacing: 0.5px;
 }
 
 .title-text-3 {
@@ -112,7 +183,7 @@
 }
 
 .sub-menu-text {
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 600;
     color: #767676
 }
@@ -204,8 +275,7 @@
     right: 0;
     left: 0;
     border-left: 1px solid var(--color-light-ddd);
-    ;
-
+    
 }
 
 .horizontal-bar {
@@ -220,7 +290,7 @@
 
 
 a:hover {
-    text-decoration: none
+    text-decoration: none;
 }
 
 .box-shadow {
@@ -274,7 +344,9 @@ a:hover {
 .primary-blue {
     color: var(--primary-blue);
 }
-
+.color-green {
+    color: green;
+}
 .justify-content-space-between {
     justify-content: space-between;
 }
@@ -283,6 +355,17 @@ a:hover {
 }
 .flex-wrap-wrap {
     flex-wrap: wrap;
+}
+.custom-container-1 {
+    display: flex;
+    justify-content: space-between;
+}
+.left {
+    flex: 1;
+}
+.right {
+    flex: 1;
+    text-align: right; 
 }
 
 /* CSS Settings */
@@ -386,22 +469,18 @@ a:hover {
 .col {
     padding: 0px !important;
 }
-
-.main-content-div {
-    padding: 20px;
-}
-
-
-
+.col-sm-8{
+    padding: 0px !important;
+  }
 @media only screen and (max-width: 600px) {
 
+    .body-sidenav-expanded, .body-sidenav-collapsed {
+        margin-left: 0%;
+    }
     .body-content {
-        padding-left: 0%;
+        margin-bottom: 22%;
+        padding: 15px;
     }
-    .main-content-div {
-        padding: 10px;
-    }
-
     .title-text-2 {
         font-weight: 700;
         font-size: 12px;
